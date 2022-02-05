@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "paths": {
+      "@ig/components/*": ["../packages/components/src/*"],
+      "@ig/*": ["../packages/*/src"],
+
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"]
+    }
+  }
+}

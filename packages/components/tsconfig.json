@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": false,
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+
+  // "references": [
+  //   { "path":  "../constants/tsconfig.json" }
+  // ]
+}

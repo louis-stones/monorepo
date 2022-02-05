@@ -1,0 +1,28 @@
+{
+  "name": "@ig/components",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": "~17.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@ig/constants": "*",
+    "@mui/material": "^5.4.0",
+    "@mui/system": "^5.4.0",
+    "@mui/x-data-grid": "^5.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.0",
+    "@types/react": "~17.0.39",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2",
+    "rimraf": "~3.0.2"
+  }
+}

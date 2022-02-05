@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ig/components/*": ["packages/components/src/*"],
+      "@ig/*": ["packages/*/src"]
+    },
+    "noEmit": true
+  }
+}

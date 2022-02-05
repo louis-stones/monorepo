@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-test",
+  "description": "TypeScript monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "scripts": {
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "pub": "lerna publish",
+    "lint": "eslint --ext js,ts,tsx ."
+  },
+  "devDependencies": {
+    "@nighttrax/eslint-config-tsx": "~10.0.0-beta.2",
+    "doctoc": "~2.1.0",
+    "eslint": "~8.7.0",
+    "eslint-plugin-import": "~2.25.4",
+    "lerna": "~4.0.0",
+    "typescript": "~4.5.5"
+  }
+}
